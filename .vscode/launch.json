@@ -1,0 +1,47 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "ras_parser",
+            "type": "python",
+            "request": "launch",
+            "program": "Z:/py/hec_meta_extract_twi/ras_parser.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--prj",
+                "Z:/Amite/Amite_LWI/Models/Amite_RAS/Amite_2022.prj",
+                "--shp",
+                "Z:/Amite/Amite_LWI/Models/Amite_RAS/Features/OptimizedGeometryBoundary.shp"
+                
+            ],
+        },
+        {
+            "name": "hms_parser",
+            "type": "python",
+            "request": "launch",
+            "program": "Z:/py/hec_meta_extract_twi/hms_parser.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--hms",
+                "Z:/Amite/Amite_LWI/Models/Amite_HMS/Amite_HMS.hms",
+                "--shp",
+                "Z:/GIS/Amite/Amite_Basin_Outline.geojson",
+                "--dss",
+                "Z:/Amite/Amite_LWI/Models/Amite_HMS/data"
+            ],
+        },
+    ]
+}
